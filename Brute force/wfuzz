@@ -1,0 +1,3 @@
+wfuzz --hs "incorrect" -c -z file,DVWA-Wordlist.txt -z file,DVWA-Wordlist.txt   -b 'security=low; PHPSESSID=gfu58fv5vvib77k0l2tsc8a7ql'  'http://127.0.0.1:42001/vulnerabilities/brute/index.php?username=FUZZ&password=FUZ2Z&Login=Login'
+
+low-medium

